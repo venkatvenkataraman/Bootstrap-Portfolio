@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
@@ -8,7 +12,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
   color: #4aaaa5;
@@ -41,6 +46,7 @@ h3 {
   z-index: 99;
   width: 100%;
   /* margin: 0 0 30px; */
+  margin-left: -14px;
   overflow: auto;
   color: #fff;
   background: #fff;
@@ -59,13 +65,22 @@ h3 {
   /* border-bottom: 2px solid #ccc; */
 }
 
-/* h2{
-  height: 80px;
-  background-color: #4aaaa5;
-  color: #fff;
-  font-family: Georgia, Times, "Times New Roman", serif;
-} */
+#emptyColumn{
+  background: url("../images/concrete_seamless.png");
+}
 
+#sideBar{
+  float: right;
+  width: 100%;
+  /* max-width: 270px; */
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#emptyColumn2{
+  background: url("../images/concrete_seamless.png");
+  height: 630px;
+}
 
 .faUl {
   display: flex;
@@ -98,4 +113,38 @@ footer {
   text-align: center;
   background: #666;
   border-top: 8px solid #4aaaa5;
+}
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  /* width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto; */
+}
+
+/* .work:nth-child(even) {
+  margin-right: 40px;
+} */
+
+.work img {
+  /* width: 100%; */
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h6 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 10px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
